@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+// Please delete any files/components that are not used
 class RegistationForm extends Component {
   state = {
     username: "",

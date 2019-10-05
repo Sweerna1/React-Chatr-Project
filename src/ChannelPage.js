@@ -18,6 +18,8 @@ class ChannelPage extends Component {
       this.props.match.params.channelID !== prevProps.match.params.channelID
     ) {
       //this.setState({changed :true})
+      //Clearing the interval should happen here not in the else
+      //setting the new interval when the id is changing should happen here
       this.props.fetchMsgs(this.props.match.params.channelID);
     } else {
       clearInterval(this.interval);

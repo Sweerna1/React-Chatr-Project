@@ -72,6 +72,8 @@ export const fetchChannelDetail = channelID => {
   };
 };
 
+//Same function defined twice with different name
+
 export const fetchMsgs = channelID => {
   return async dispatch => {
     try {
